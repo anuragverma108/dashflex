@@ -2,7 +2,9 @@
 
 DashFlex is a feature-rich, responsive admin dashboard built with React and Material-UI. It provides a modern and intuitive interface for managing various aspects of your application.
 
-![DashFlex Dashboard](screenshot.png)
+
+![Screenshot 2025-06-08 071025](https://github.com/user-attachments/assets/1006a2e0-2889-4e96-907f-3b498cbca626)
+
 
 ## Features
 
