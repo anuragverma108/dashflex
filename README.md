@@ -67,7 +67,7 @@ DashFlex is a feature-rich, responsive admin dashboard built with React and Mate
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/dashflex.git
+git clone https://github.com/anuragverma108/dashflex.git
 cd dashflex
 ```
 
@@ -131,4 +131,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-For support, email support@dashflex.com or open an issue in the repository.
+For support, email anuragvermacontact@gmail.com or open an issue in the repository.
+
+
