@@ -1,70 +1,132 @@
-# Getting Started with Create React App
+# DashFlex - Modern React Admin Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+DashFlex is a feature-rich, responsive admin dashboard built with React and Material-UI. It provides a modern and intuitive interface for managing various aspects of your application.
+
+![DashFlex Dashboard](screenshot.png)
+
+## Features
+
+- 📊 **Interactive Charts**: Visualize data with various chart types using Recharts
+  - Line charts for revenue trends
+  - Area charts for device usage
+  - Bar charts for sales comparison
+  - Pie charts for traffic distribution
+
+- 📋 **Data Tables**: Powerful data grid with advanced features
+  - Sorting and filtering
+  - Pagination
+  - Column customization
+  - Export functionality
+  - Inline editing
+
+- 📅 **Calendar Integration**: Full-featured calendar using FullCalendar
+  - Event management
+  - Multiple views (month, week, day)
+  - Drag and drop events
+  - Event creation and editing
+
+- 📌 **Kanban Board**: Drag-and-drop task management
+  - Multiple columns (To Do, In Progress, Done)
+  - Task creation and deletion
+  - Drag and drop between columns
+  - Task status tracking
+
+- 🎨 **Theme Customization**
+  - Light/Dark mode toggle
+  - Color palette preview
+  - Real-time theme changes
+  - Customizable UI components
+
+- 📱 **Responsive Design**
+  - Mobile-friendly interface
+  - Collapsible sidebar
+  - Adaptive layouts
+  - Touch-friendly interactions
+
+## Tech Stack
+
+- React 18
+- Material-UI (MUI) v5
+- Redux Toolkit
+- React Router v6
+- Recharts
+- FullCalendar
+- React Beautiful DND
+- MUI X Data Grid
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/dashflex.git
+cd dashflex
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm start
+```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── components/         # Reusable components
+│   └── Layout/        # Layout components (Header, Sidebar)
+├── hooks/             # Custom React hooks
+├── pages/             # Main application pages
+│   ├── Dashboard/     # Dashboard components and logic
+│   ├── Tables/        # Data grid implementation
+│   ├── Charts/        # Chart components
+│   ├── Calendar/      # Calendar implementation
+│   ├── KanbanBoard/   # Kanban board components
+│   └── Settings/      # Theme settings
+├── store/             # Redux store configuration
+│   └── slices/        # Redux slices
+├── theme/             # Theme configuration
+└── App.js             # Main application component
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
 
-### `npm start`
+## Contributing
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
 
-### `npm test`
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Acknowledgments
 
-### `npm run build`
+- [Material-UI](https://mui.com/)
+- [Recharts](https://recharts.org/)
+- [FullCalendar](https://fullcalendar.io/)
+- [React Beautiful DND](https://github.com/atlassian/react-beautiful-dnd)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Support
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support, email support@dashflex.com or open an issue in the repository.
