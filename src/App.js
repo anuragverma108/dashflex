@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider, CssBaseline } from '@mui/material';
+import { useTheme } from './hooks/useTheme';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
+import Tables from './pages/Tables';
+import Charts from './pages/Charts';
+import Calendar from './pages/Calendar';
+import KanbanBoard from './pages/KanbanBoard';
+import Settings from './pages/Settings';
 
 function App() {
+  const { theme } = useTheme();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/tables" element={<Tables />} />
+            <Route path="/charts" element={<Charts />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/kanban" element={<KanbanBoard />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </ThemeProvider>
   );
 }
 
