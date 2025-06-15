@@ -18,7 +18,7 @@ DashFlex is a feature-rich, responsive admin dashboard built with React and Mate
   - Sorting and filtering
   - Pagination
   - Column customization
-  - Export functionality
+  - Export functionalities
   - Inline editing
 
 - 📅 **Calendar Integration**: Full-featured calendar using FullCalendar
